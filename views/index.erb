@@ -1,0 +1,10 @@
+<form action="/" method="post">
+  <input type="text" placeholder="Love Note" name="love_note">
+  <input type="submit" value="Send some Love">
+</form>
+<hr>
+<ul>
+  <% LoveNoteLibrary.each do |note| %>
+    <li><%= note %></li>
+  <% end %>
+</ul>
